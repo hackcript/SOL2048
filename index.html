@@ -1,6 +1,105 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Leaderboard</title>
+  <style>
+      body { font-family: Arial, sans-serif; }
+      table { width: 50%; margin: 20px auto; border-collapse: collapse; }
+      th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+  </style>
+  <!-- Add Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+</head>
+<body>
+  <h1 style="text-align: center;">Game Leaderboard</h1>
+  <div style="text-align: center;">
+      <input type="text" id="name" placeholder="Enter your name" onkeydown="handleKeyDown(event)" />
+      <button onclick="submitScore()">Submit Score</button>
+  </div>
+  <table>
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Best Score</th>
+          </tr>
+      </thead>
+      <tbody id="leaderboard"></tbody>
+  </table>
+
+  <script>
+      // Your Firebase configuration
+      const firebaseConfig = {
+          apiKey: "AIzaSyAp4VgiU0cuyYQMgFzCF2Dx-BtwLtFBUg4",
+          authDomain: "sol-2048.firebaseapp.com",
+          projectId: "sol-2048",
+          storageBucket: "sol-2048.firebasestorage.app",
+          messagingSenderId: "533575983279",
+          appId: "1:533575983279:web:63ce941945426bb07cb45a",
+          measurementId: "G-DM8BEY62KL"
+      };
+
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore(); // Initialize Firestore here
+
+      // Assume this variable holds the best score from your game
+      let bestScore = 0; // Replace this with your actual game best score logic
+
+      async function fetchLeaderboard() {
+          const leaderboard = document.getElementById('leaderboard');
+          leaderboard.innerHTML = '';
+
+          // Get the top 10 scores
+          const snapshot = await db.collection('scores').orderBy('score', 'desc').limit(10).get();
+          snapshot.forEach(doc => {
+              const data = doc.data();
+              const row = `<tr><td>${doc.id}</td><td>${data.score}</td></tr>`; // Use doc.id for the player's name
+              leaderboard.innerHTML += row;
+          });
+      }
+
+      async function submitScore() {
+        const name = document.getElementById('name').value;
+        if (!name) {
+          alert("Please enter your name.");
+          return; // Exit the function if the name is empty
+        }
+
+        const bestScoreText = document.querySelector('.best-container').textContent;
+        const bestScore = parseInt(bestScoreText, 10);
+
+        const scoresRef = db.collection('scores');
+        const playerDoc = await scoresRef.doc(name).get();
+
+        if (playerDoc.exists) {
+          const existingScore = playerDoc.data().score;
+          if (bestScore > existingScore) {
+            await scoresRef.doc(name).update({ score: bestScore });
+          }
+        } else {
+          await scoresRef.doc(name).set({ score: bestScore });
+        }
+
+        document.getElementById('name').value = '';
+        fetchLeaderboard();
+      }
+
+      // Prevent WASD keys from affecting the game when typing in the input field
+      function handleKeyDown(event) {
+          if (event.key === 'w' || event.key === 'a' || event.key === 's' || event.key === 'd' || event.key === 'h' || event.key === 'k' || event.key === 'l') {
+              event.stopPropagation(); // Prevent the event from bubbling up
+          }
+      }
+
+      // Fetch leaderboard on page load
+      fetchLeaderboard();
+  </script>
+
+
   <meta charset="utf-8">
   <title>SOL 2048</title>
 
@@ -134,3 +233,5 @@
   <script src="js/application.js"></script>
 
 </html>
+
+

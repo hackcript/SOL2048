@@ -551,12 +551,12 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #f0f url('https://niggabutt.com/gallery/photo_2024-03-19_18-31-02.jpg?ts=1710876611');
+    background: rgb(255, 255, 255) url('https://niggabutt.com/gallery/photo_2024-03-19_18-31-02.jpg?ts=1710876611');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
     
   .tile.tile-4 .tile-inner {
-    background: #f0f url('https://pump.mypinata.cloud/ipfs/QmaFy59TMnLb4jGgL6LpquyXSxTRXKR4mEfSobUSsPoR46?img-width=256&img-dpr=2&img-onerror=redirect');
+    background: rgb(255, 255, 255) url('https://pump.mypinata.cloud/ipfs/QmaFy59TMnLb4jGgL6LpquyXSxTRXKR4mEfSobUSsPoR46?img-width=256&img-dpr=2&img-onerror=redirect');
     background-size: cover;    
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
     
@@ -565,19 +565,19 @@ hr {
     background-size: cover;}
     
   .tile.tile-16 .tile-inner {
-    background: #f0f url('https://s2.coinmarketcap.com/static/img/coins/64x64/31921.png');
+    background: rgb(255, 255, 255) url('https://s2.coinmarketcap.com/static/img/coins/64x64/31921.png');
     background-size: cover;}
     
   .tile.tile-32 .tile-inner {
-    background: #f0f url('https://dd.dexscreener.com/ds-data/tokens/solana/ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY.png?size=xl&key=cbd288');
+    background: rgb(255, 255, 255) url('https://dd.dexscreener.com/ds-data/tokens/solana/ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY.png?size=xl&key=cbd288');
     background-size: cover;}
     
   .tile.tile-64 .tile-inner {
-    background: #f0f url('https://assets.coingecko.com/coins/images/50891/standard/fart.jpg?1729503972');
+    background: rgb(255, 255, 255) url('https://assets.coingecko.com/coins/images/50891/standard/fart.jpg?1729503972');
     background-size: cover;}
     
   .tile.tile-128 .tile-inner {
-    background: #f0f url('https://i.tribune.com.pk/media/images/ufd1734620742-0/ufd1734620742-0.png');
+    background: rgb(255, 255, 255) url('https://i.tribune.com.pk/media/images/ufd1734620742-0/ufd1734620742-0.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
@@ -586,7 +586,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
 
-    background: #f0f url('https://c.saavncdn.com/346/Giga-Chad-English-2022-20230623063017-500x500.jpg');
+    background: rgb(255, 255, 255) url('https://c.saavncdn.com/346/Giga-Chad-English-2022-20230623063017-500x500.jpg');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
@@ -595,7 +595,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
 
-    background: #f0f url('https://pump.mypinata.cloud/ipfs/QmSEfnNod9X2X5e3qVb43R4YJRH4AJmFtwaBGRUDbCSkN2?img-width=256&img-dpr=2&img-onerror=redirect');
+    background: rgb(255, 255, 255) url('https://pump.mypinata.cloud/ipfs/QmSEfnNod9X2X5e3qVb43R4YJRH4AJmFtwaBGRUDbCSkN2?img-width=256&img-dpr=2&img-onerror=redirect');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
@@ -603,7 +603,7 @@ hr {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    background: #f0f url('https://pump.mypinata.cloud/ipfs/QmP1mT7BLhPyrzYnTaWUhwNAYQCTPxp1R5gbqNEYgbVVNw?img-width=256&img-dpr=2&img-onerror=redirect');
+    background: rgb(255, 255, 255) url('https://pump.mypinata.cloud/ipfs/QmP1mT7BLhPyrzYnTaWUhwNAYQCTPxp1R5gbqNEYgbVVNw?img-width=256&img-dpr=2&img-onerror=redirect');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
@@ -612,7 +612,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
 
-    background: #f0f url('https://ichef.bbci.co.uk/news/800/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg.webp');
+    background: rgb(255, 255, 255) url('https://ichef.bbci.co.uk/news/800/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg.webp');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
@@ -621,7 +621,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
 
-    background: #f0f url('https://www.cnet.com/a/img/resize/61c44c6765cb6b8529df884935ad7aefc622aeec/hub/2021/11/03/3c2a7d79-770e-4cfa-9847-66b3901fb5d7/c09.jpg?auto=webp&fit=crop&height=675&width=1200');
+    background: rgb(255, 255, 255) url('https://www.cnet.com/a/img/resize/61c44c6765cb6b8529df884935ad7aefc622aeec/hub/2021/11/03/3c2a7d79-770e-4cfa-9847-66b3901fb5d7/c09.jpg?auto=webp&fit=crop&height=675&width=1200');
     background-size: cover;    
     font-size: 30px; }
     @media screen and (max-width: 480px) {
