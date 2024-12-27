@@ -126,7 +126,7 @@ async function fetchLeaderboard() {
 // Submit a new score to Airtable
 async function submitScore() {
     const name = document.getElementById('name').value.trim();
-    const bestScore = parseInt(document.getElementById('bestScoreDisplay').textContent, 10); // Get the score from the HTML element
+    const bestScore = parseInt(document.querySelector('.best-container').textContent, 10); // Get the score from the HTML element
 
     if (!name) {
         alert("Use Only CAPS.");
@@ -155,38 +155,6 @@ async function submitScore() {
     }
 }
 
-// Disable game controls when typing in the name input
-const nameInput = document.getElementById('name');
-
-nameInput.addEventListener('focus', () => {
-    // Temporarily disable game key controls
-    window.removeEventListener('keydown', gameKeyHandler);
-});
-
-nameInput.addEventListener('blur', () => {
-    // Re-enable game key controls
-    window.addEventListener('keydown', gameKeyHandler);
-});
-
-// Example game key handler
-function gameKeyHandler(event) {
-    // Check if the name input is focused
-    if (document.activeElement === nameInput) {
-        // Prevent WASD keys from triggering game controls
-        if (['KeyW', 'KeyA', 'KeyS', 'KeyD'].includes(event.code)) {
-            event.preventDefault(); // Prevent default action
-            return; // Exit the function
-        }
-    }
-
-    // Handle game controls
-    if (['KeyW', 'KeyA', 'KeyS', 'KeyD'].includes(event.code)) {
-        console.log(`Game moved: ${event.code}`); // Replace with your game logic
-    }
-}
-
-// Attach the game key handler initially
-window.addEventListener('keydown', gameKeyHandler);
 
 // Fetch leaderboard every 10 seconds
 setInterval(fetchLeaderboard, 10000);
@@ -249,7 +217,7 @@ fetchLeaderboard();
 
     <script>
         document.getElementById("copyButton").onclick = () => {
-            navigator.clipboard.writeText("Soon")
+            navigator.clipboard.writeText("CACACACACACACACACACACACACACA")
                 .then(() => alert("Contract address copied!"))
                 .catch(err => console.error("Failed to copy: ", err));
         };
