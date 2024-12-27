@@ -561,7 +561,7 @@ hr {
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
     
   .tile.tile-8 .tile-inner {
-    background: #f0f url('https://pngimg.com/uploads/wojak/wojak_PNG109616.png');
+    background: rgb(255, 255, 255) url('https://pngimg.com/uploads/wojak/wojak_PNG109616.png');
     background-size: cover;}
     
   .tile.tile-16 .tile-inner {
@@ -586,7 +586,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
 
-    background: #f0f url('https://static.wikia.nocookie.net/joke-battles/images/d/df/Gigachad.png/revision/latest?cb=20230812064835');
+    background: #f0f url('https://c.saavncdn.com/346/Giga-Chad-English-2022-20230623063017-500x500.jpg');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
