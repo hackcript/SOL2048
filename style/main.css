@@ -561,23 +561,23 @@ hr {
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
     
   .tile.tile-8 .tile-inner {
-    background: rgb(255, 255, 255) url('https://pngimg.com/uploads/wojak/wojak_PNG109616.png');
+    background: rgb(255, 255, 255) url('https://pump.mypinata.cloud/ipfs/QmSEfnNod9X2X5e3qVb43R4YJRH4AJmFtwaBGRUDbCSkN2?img-width=256&img-dpr=2&img-onerror=redirect');
     background-size: cover;}
     
   .tile.tile-16 .tile-inner {
-    background: rgb(255, 255, 255) url('https://s2.coinmarketcap.com/static/img/coins/64x64/31921.png');
+    background: rgb(255, 255, 255) url('https://dd.dexscreener.com/ds-data/tokens/solana/A8C3xuqscfmyLrte3VmTqrAq8kgMASius9AFNANwpump.png?size=lg&key=2c2126');
     background-size: cover;}
     
   .tile.tile-32 .tile-inner {
-    background: rgb(255, 255, 255) url('https://dd.dexscreener.com/ds-data/tokens/solana/ED5nyyWEzpPPiWimP8vYm7sD7TD3LAt3Q3gRTWHzPJBY.png?size=xl&key=cbd288');
+    background: rgb(255, 255, 255) url('https://dd.dexscreener.com/ds-data/tokens/solana/eL5fUxj2J4CiQsmW85k5FG9DvuQjjUoBHoQBi2Kpump.png?size=lg&key=e40033');
     background-size: cover;}
     
   .tile.tile-64 .tile-inner {
-    background: rgb(255, 255, 255) url('https://assets.coingecko.com/coins/images/50891/standard/fart.jpg?1729503972');
+    background: rgb(255, 255, 255) url('https://upload.wikimedia.org/wikipedia/commons/4/40/Vine_V_white.png');
     background-size: cover;}
     
   .tile.tile-128 .tile-inner {
-    background: rgb(255, 255, 255) url('https://i.tribune.com.pk/media/images/ufd1734620742-0/ufd1734620742-0.png');
+    background: rgb(255, 255, 255) url('https://assets.coingecko.com//coins/images/51079/small/MLGTICKERIMAGE2_%283%29.png?1732899940');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
@@ -595,7 +595,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
 
-    background: rgb(255, 255, 255) url('https://pump.mypinata.cloud/ipfs/QmSEfnNod9X2X5e3qVb43R4YJRH4AJmFtwaBGRUDbCSkN2?img-width=256&img-dpr=2&img-onerror=redirect');
+    background: rgb(255, 255, 255) url('https://dd.dexscreener.com/ds-data/tokens/solana/7GCihgDB8fe6KNjn2MYtkzZcRjQy3t9GHdC8uHYmW2hr.png?size=lg&key=af7c36');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
@@ -603,7 +603,7 @@ hr {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    background: rgb(255, 255, 255) url('https://pump.mypinata.cloud/ipfs/QmP1mT7BLhPyrzYnTaWUhwNAYQCTPxp1R5gbqNEYgbVVNw?img-width=256&img-dpr=2&img-onerror=redirect');
+    background: rgb(255, 255, 255) url('https://gettrumpmemes.com/images/TrumpCard_EnjoyMySneakers_Signiture-680_1.webp');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
