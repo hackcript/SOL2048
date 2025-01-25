@@ -125,8 +125,9 @@ async function fetchLeaderboard() {
 
 // Submit a new score to Airtable
 async function submitScore() {
+    const localScoreManager = new LocalScoreManager();
     const name = document.getElementById('name').value.trim();
-    const bestScore = parseInt(document.querySelector('.best-container').textContent, 10); // Get the score from the HTML element
+    const bestScore = localScoreManager.get();
 
     if (!name) {
         alert("Use Only CAPS.");
